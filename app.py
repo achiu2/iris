@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, session
-from api import google
+import google
 import urllib2, json
 
 Key = AIzaSyAuLnW45Bedo3D1QRAs0DkqQkDPQW4ykDI
