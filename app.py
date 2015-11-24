@@ -1,8 +1,7 @@
 from flask import Flask, render_template, request, session
 import google
 import urllib2, json
-
-Key = 'AIzaSyAuLnW45Bedo3D1QRAs0DkqQkDPQW4ykDI'
+import bs4, re
 
 app = Flask(__name__)
 
@@ -18,7 +17,13 @@ def index():
         rlist = []
         for r in results:
             rlist.append(r)
-        print rlist
+        
+        url = urllib2.urlopen(rlist[0])
+        page = url.read()
+        soup = bs4.BeautifulSoup(page, 'html')
+        raw = soup.get_text()
+        clean = 
+
         return render_template(
             "home.html",
             search=search,
