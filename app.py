@@ -9,7 +9,7 @@ def index():
         return render_template("home.html")
     else:
         query = request.form['search']
-        results = utils.searchWho(query)
+        results = utils.Search(query)
         return render_template("results.html", results=results)
 
 if __name__=="__main__":
