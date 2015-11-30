@@ -1,9 +1,73 @@
-body {
-  color: white;
-  font-size: 15px;
-  background-color: #141414;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  font-family: Arial;
+html, body {
+	background-color:#141414;
+	color: #FFFFFF;
+	text-align: center;
+	
+	min-height:100%;
+	margin: 0;
+	padding-top: 50px;
+	padding-bottom:50px;
+	left: 0;
+	right: 0;
+	height: 100%;
+	max-width: none;
+	text-align: center;
+}
+h1 {
+	font-family: 'Roboto', sans-serif;
+	color:#FFFFFF;
+	font-size: 100px;
+	font-style: normal;
+	font-variant: lighter;
+	font-weight: 300;
+	line-height: 25px;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	color:#FFFFFF;
+	font-size: 50px;
+	font-style: normal;
+	font-variant: lighter;
+	line-height: 50px;
+}
+
+hr {
+	color: #FFFFFF;
+}
+.textbox {
+	background: url("search.png") left no-repeat;
+	background-size:30px;
+	background-color:#FFFFFF;
+ 	border-style:hidden;
+ 	padding:10px 10px 10px 50px;
+ 	height:20px;
+ 	width:350px;
+ 	font-size:20px;
+ 	border-radius:12px;
+ }
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  
+  -webkit-animation:fadeIn ease-in 1; 
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1.5s;
+  -moz-animation-duration:1.5s;
+  animation-duration:1.5s;
+}
+
+.fade-in .title {
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  animation-delay: 3s;
 }
