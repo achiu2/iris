@@ -4,11 +4,18 @@
 
 
 {% block body %}
-<br>
-You searched for: <br>
-<b> {{query}} </b><br><br>
-iriS believes this should answer your query: <br>
-<b>{{results}}</b>
 
+<br>
+<hr>
+<p style="
+    font-family:'Roboto', sans-serif;
+	color:#FFFFFF;
+	font-size: 30px;">You searched for: <br>
+	<b>"{{query}}"</b></p><br>
+<p style="
+    font-family:'Roboto', sans-serif;
+	color:#FFFFFF;
+	font-size: 30px;">iriS believes this should answer your query:<br>
+<b>{{results}}</b></p>
 
 {% endblock body %}
