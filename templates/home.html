@@ -1,9 +1,12 @@
+{% extends "base.html" %}
 
+{% block title %} - Search{% block content %}
+
+{% block content %}
 <form method="POST">
   <input type="text" name="search">
   <input type="submit" value="submit">
 
 </form>
+{% endblock %}
 
-{{search}}
-{{results}}
