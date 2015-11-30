@@ -10,7 +10,7 @@ def index():
     else:
         query = request.form['search']
         results = utils.Search(query)
-        return render_template("results.html", results=results)
++       return render_template("results.html", results=results, query=query)
 
 if __name__=="__main__":
     app.debug = True
