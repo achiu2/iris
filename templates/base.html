@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,12 +8,14 @@
 <title> {% block title %} {% endblock %}</title>
 
     <link rel="stylesheet" type="text/css" href="/static/style.css" />
-
+    <link rel="shortcut icon" type="image/ico"
+    href="{{url_for('static', filename='iris.png')}}">
   </head>
-
-<a href="/">
-  <img src="/static/wave.gif">
-</a>
+  <img src="/static/iris.png" width="200px">
+  <div style="" class="fade-in title">
+    <span style="font-size:100px; line-height:200%;"><h1>iriS</h1></span>
+  </div>
+  <!--<img src="/static/wave.gif" width="100%">-->
 
 {% block body %} 
 
