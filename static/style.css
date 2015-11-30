@@ -1,9 +1,9 @@
 body {
-  color: #ffffff;
+  color: white;
   font-size: 15px;
   background-color: #141414;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
-
+  font-family: Arial;
 }
