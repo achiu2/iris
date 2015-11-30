@@ -5,7 +5,7 @@ def searchGeneral(query):
     results = google.search(query, num=10, start=0, stop=10)
     rlist = []
     for url in results: 
-        print url
+        #print url
         try: 
             request = urllib2.urlopen(url)
             result = request.read()
@@ -23,7 +23,7 @@ def searchWho(query):
     results = google.search(query, num=10, start=0, stop=10)
     rlist = []
     for url in results: 
-        print url
+        #print url
         try: 
             request = urllib2.urlopen(url)
             result = request.read()
@@ -41,7 +41,7 @@ def searchWhen(query):
     results = google.search(query, num=10, start=0, stop=10)
     rlist = []
     for url in results: 
-        print url
+        #print url
         try:
             request = urllib2.urlopen(url)
             result = request.read()
